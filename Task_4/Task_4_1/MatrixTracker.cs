@@ -15,7 +15,7 @@ namespace Task_4_1
             }
             else
             {
-                throw new ArgumentException("Matrix cannot be null.");
+                throw new ArgumentNullException("Matrix cannot be null.");
             }
 
             _matrix.ElementChanged += (_, args) => { _lastChange = args; };

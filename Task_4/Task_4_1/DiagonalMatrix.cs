@@ -31,7 +31,7 @@ namespace Task_4_1
                     T oldValue = _diagonal[i];
                     _diagonal[i] = value;
 
-                    if (oldValue != null && !oldValue.Equals(_diagonal[i]))
+                    if (!oldValue.Equals(_diagonal[i]))
                     {
                         OnElementChanged(new ElementChangedEventArgs<T>(i, j, oldValue, value));
                     }

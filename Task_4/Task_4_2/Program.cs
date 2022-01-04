@@ -32,6 +32,10 @@ namespace Task_4_2
                 c = 5;
                 Console.WriteLine($"implicit cast: 5 -> {c}");
             }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             catch (ArgumentException e)
             {
                 Console.WriteLine(e.Message);

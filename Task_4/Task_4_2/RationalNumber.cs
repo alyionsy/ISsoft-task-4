@@ -74,7 +74,7 @@ namespace Task_4_2
         {
             if (a == null || b == null)
             {
-                throw new ArgumentException("Rational number cannot be null");
+                throw new ArgumentNullException("Rational number cannot be null");
             }
 
             return new RationalNumber(a._numerator * b._denominator + b._numerator * a._denominator, a._denominator * b._denominator);
@@ -84,7 +84,7 @@ namespace Task_4_2
         {
             if (a == null || b == null)
             {
-                throw new ArgumentException("Rational number cannot be null");
+                throw new ArgumentNullException("Rational number cannot be null");
             }
 
             return new RationalNumber(a._numerator * b._denominator - b._numerator * a._denominator, a._denominator * b._denominator);
@@ -94,7 +94,7 @@ namespace Task_4_2
         {
             if (a == null || b == null)
             {
-                throw new ArgumentException("Rational number cannot be null");
+                throw new ArgumentNullException("Rational number cannot be null");
             }
 
             return new RationalNumber(a._numerator * b._numerator, a._denominator * b._denominator);
@@ -104,7 +104,7 @@ namespace Task_4_2
         {
             if (a == null || b == null)
             {
-                throw new ArgumentException("Rational number cannot be null");
+                throw new ArgumentNullException("Rational number cannot be null");
             }
 
             return new RationalNumber(a._numerator * b._denominator, a._denominator * b._numerator);
@@ -114,7 +114,7 @@ namespace Task_4_2
         {
             if (a == null)
             {
-                throw new ArgumentException("Rational number cannot be null");
+                throw new ArgumentNullException("Rational number cannot be null");
             }
 
             return (double)a._numerator / a._denominator;

@@ -18,7 +18,7 @@ namespace Task_4_1
             }
             else
             {
-                throw new ArgumentException("Matrix cannot be null.");
+                throw new ArgumentNullException("Matrix cannot be null.");
             }
 
             if (a.Size < b.Size)

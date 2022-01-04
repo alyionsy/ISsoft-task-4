@@ -30,6 +30,10 @@ namespace Task_4_1
                 DiagonalMatrix<string> stringMatrixSum = stringMatrix1.Add<string>(stringMatrix2, StringSum);
                 Console.WriteLine($"their sum:\n {stringMatrixSum}");
             }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             catch (ArgumentException e)
             {
                 Console.WriteLine(e.Message);
